@@ -3,9 +3,16 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
+  padding-top:50px;
+  padding-bottom: 50px;
   position: fixed;
 }
-
+.header .nav-wrapper
+{
+-webkit-transition: padding-bottom .5s ease,padding-top .5s;
+-webkit-transition: padding-bottom .5s ease-out,padding-top .5s ease ease-out .25s;
+transition: padding-bottom .5s ease-out,padding-top .5s ease ease-out .25s;
+}
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -32,7 +39,7 @@ header nav[aria-expanded='true'] {
 
 @media (width >= 900px) {
   header nav {
-    display: flex;
+    display: flex;    
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
@@ -51,7 +58,12 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: var(--text-color);
+  padding:15px 17px;
+}
+header nav a:hover {
+  text-decoration: none;
+  background-color: var(--link-bg-color);
 }
 
 /* hamburger */
@@ -222,6 +234,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+    justify-content: end;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {

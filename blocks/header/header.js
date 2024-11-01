@@ -146,6 +146,10 @@ export default async function decorate(block) {
     });
   }
 
+
+
+
+
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
@@ -163,4 +167,17 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+
+  // reduce  header height on scroll 
+  const header = document.querySelector('.nav-wrapper');
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.style.padding = '10px 0px'; // Reduced padding
+        header.style.boxShadow = '0 8px 20px 0 rgba(0,0,0,.26)'; // Reduced padding
+      } else {
+          header.style.padding = '50px 0px'; // Original padding
+          header.style.boxShadow = 'none'; // Original padding
+      }
+  });
 }
