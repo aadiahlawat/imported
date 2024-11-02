@@ -5,7 +5,7 @@ footer {
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1160px;
   padding: 40px 24px 24px;
 }
 
@@ -17,9 +17,57 @@ footer .footer a {
   text-decoration: underline;
   color: #fff;
 }
+footer .footer-top-bar 
+{
+  margin-bottom:50px;
+}
+footer .footer-top-bar .default-content-wrapper
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+footer .footer-top-bar .default-content-wrapper ul
+{
+  display: flex;
+  list-style: none;
+  gap:20px;
+}
+footer .footer-top-bar .default-content-wrapper ul li a
+{
+  text-decoration: none;
+}
+footer .footer-top-bar .default-content-wrapper ul li a:hover
+{
+  text-decoration: underline;
+}
+footer .footer-top-bar .default-content-wrapper .icon-wknd-logo-light
+{
+  width:128px !important;
+  height: auto !important;
+}
 
+footer .footer-top-bar .default-content-wrapper p:last-child 
+{
+  display: flex;
+    align-items: center;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child strong
+{
+  margin-right: 15px;
+}
+footer .footer-top-bar .default-content-wrapper p:last-child a
+{
+  padding: 10px 10px 5px 10px;
+  background-color: #ebebeb;
+}
+footer .section:not(.footer-top-bar)
+{
+  margin-bottom: 15px;
+}
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 40px 14px 24px;
   }
 }
