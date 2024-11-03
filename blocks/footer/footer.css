@@ -1,6 +1,8 @@
 footer {
   background-color: var(--darkest-color);
   font-size: var(--body-font-size-xs);
+  float: left;
+  width: 100%;
 }
 
 footer .footer > div {
