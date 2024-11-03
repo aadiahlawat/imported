@@ -326,53 +326,6 @@ main .section.highlight {
   text-transform: uppercase !important;
 }
 
-/*   our contributors  */ 
-
-.our-contributors .cards .cards-card-body p:last-child
-{
-  background-color: #202020;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    padding: 8px 0 0 0;
-    justify-content: space-around;
-}
-.our-contributors .cards > ul > li
-{
-  text-align: center;
-  border: none;
-}
-.our-contributors .cards > ul > li .cards-card-image img
-{
-  border-radius: 50%;
-    height: 164px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 164px;
-}
-/**  capstone guides  **/
-.capstone-guides .cards > ul > li
-{
-  text-align: center;
-  border: none;
-}
-.capstone-guides .cards > ul > li .cards-card-image img
-{
-  border-radius: 50%;
-    height: 164px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 164px;
-}
-.capstone-guides .cards .cards-card-body p:last-child
-{
-  background-color: #202020;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    padding: 8px 0 0 0;
-    justify-content: space-around;
-}
 /**  homepage ***/
 .home-carousel .carousel-wrapper
 {
@@ -577,6 +530,14 @@ main .section.highlight {
   text-transform: none;
   top: 49px;
   z-index: 2;
+}
+.magazine-locked-section .cards-card-image 
+{
+  height: 200px;
+}
+.magazine-locked-section .cards-card-image img
+{
+  height: 200px;
 }
 @media (min-width>=900px)
 {

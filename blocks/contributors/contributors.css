@@ -1,0 +1,30 @@
+.our-contributors .contributors div p:last-child
+{
+  background-color: #202020;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding: 8px 0 0 0;
+    width: 150px;
+    justify-content: space-around;
+}
+.our-contributors .contributors div p:last-child a
+{
+    width: 20px;
+}
+.our-contributors .contributors
+{
+    display: flex;
+    gap:24px;
+    justify-content: space-between;
+  text-align: center;
+  border: none;
+}
+.our-contributors .contributors picture img
+{
+  border-radius: 50%;
+    height: 164px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 164px;
+}

@@ -1,0 +1,26 @@
+.capstone-guides  .guides div p:last-child
+{
+  background-color: #202020;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    width: 150px;
+    padding: 8px 0 0 0;
+    justify-content: space-around;
+}
+.capstone-guides  .guides
+{
+    display: flex;
+    gap:24px;
+    justify-content: space-between;
+  text-align: center;
+  border: none;
+}
+.capstone-guides  .guides picture img
+{
+  border-radius: 50%;
+    height: 164px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 164px;
+}
