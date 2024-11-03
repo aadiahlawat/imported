@@ -1,0 +1,95 @@
+
+/***********    adventures page  ***************/
+
+.adventures-banner .carousel-wrapper
+{
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+.adventures-banner .carousel-slide-image
+{
+  height: 40pc;
+}
+.adventures-banner .carousel .carousel-slide-indicator button
+{
+  width: 10px !important;
+  height: 10px !important;
+}
+.adventures-banner .carousel-slide-content
+  {
+  margin: 92px 92px 0px 92px !important;
+  background-color: #fff !important;
+  float: left !important;
+  color: #000 !important;
+  height: 180px !important;
+  margin-top: -180px !important;
+  min-height: 180px !important;
+  padding-bottom: 0 !important;
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+  position: relative !important;
+  width: 71pc !important;   
+}
+.adventures-banner .carousel-slide-content h2
+{
+  margin-top: 0px;
+}
+.adventures-banner .carousel-slide-indicators
+{
+  background-color: #fff !important;
+}
+.adventures-banner .carousel-navigation-buttons
+{    
+  left: auto !important;
+  right: 0 !important;
+  width: 50px !important;
+  justify-content: end !important;
+  top: auto !important;
+  bottom: -60px !important;
+}
+.adventures-banner .carousel-navigation-buttons button
+{
+  background-color: transparent !important;
+}
+.adventures-banner .carousel .carousel-navigation-buttons button::after
+{
+  color: #000 !important;
+}
+.adventures-banner .carousel-slide-content
+{
+  padding-bottom: 40px !important;
+}
+.adventures-tabs-list .default-content-wrapper
+{
+  display: flex;
+    gap: 30px;
+}
+.adventures-tabs-list .default-content-wrapper .active-tab
+{
+  background: #202020;
+  color:#fff;
+}
+.adventures-tabs-list .default-content-wrapper p
+{
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.adventures-tabs-list .default-content-wrapper p:hover
+{
+  background: #202020;
+  color:#fff;
+}
+.adventures-tabs-content .columns-wrapper img
+{
+  width: 260px !important;
+  max-width: 260px !important;
+  height: 200px !important;
+}
+.adventures-tabs-content .columns-wrapper .columns > div
+{
+  display: block !important;
+  width: 260px !important;
+  max-width: 260px !important;
+  float: left;
+  margin: 12px 12px;
+}
