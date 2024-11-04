@@ -21,7 +21,7 @@ function renderData(block,data)
     const articles=data.data;
     const totalArticles=data.total;
     articleWrapper.setAttribute('data-totalArticles',totalArticles);
-    // Render the list Articles
+    
     articles.forEach(article => {
 
         const articleContent = document.createElement('article');
@@ -61,8 +61,9 @@ function renderData(block,data)
     {
         block.querySelector('ul').remove();
     }
-    block.prepend(articleWrapper);
+    block.append(articleWrapper);
 }
+/*
 function renderPagination(block,path,articlesPerPage,totalArticles,currentPage)
 {
     const totalPages=Math.ceil(totalArticles/articlesPerPage);
@@ -81,11 +82,11 @@ function renderPagination(block,path,articlesPerPage,totalArticles,currentPage)
         pagination.appendChild(li);
     }
     block.append(pagination);
-}
+} 
 async function paginate(block,path,articlesPerPage,totalArticles,currentPage)
 {
     fetchArticles(block,path,articlesPerPage,currentPage);
-}
+}*/
 export default async function decorate(block) {
         let currentPage=1;
         const articlesPerPage=8;

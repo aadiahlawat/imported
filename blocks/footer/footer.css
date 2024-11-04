@@ -63,7 +63,7 @@ footer .footer-top-bar .default-content-wrapper p:last-child a img
 }
 footer .footer-top-bar .default-content-wrapper p:last-child .icon
 {
-  speak: none;
+    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: wknd-icon-font!important;

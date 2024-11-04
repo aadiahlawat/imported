@@ -59,59 +59,23 @@
 {
   padding-bottom: 40px !important;
 }
-.adventures-tabs-list .default-content-wrapper
+
+.adventures-outer
 {
   display: flex;
-    gap: 30px;
+    gap: 24px;
+    flex-wrap: wrap;
 }
-.adventures-tabs-list .default-content-wrapper .active-tab
+.adventures-outer article
 {
-  background: #202020;
-  color:#fff;
+  width: 260px;
 }
-.adventures-tabs-list .default-content-wrapper p
+.adventures-outer article .adventure-title-container a
 {
-  padding: 5px 10px;
-  cursor: pointer;
-  text-transform: var(--transformUppercase);
-}
-.adventures-tabs-list .default-content-wrapper p:hover
-{
-  background: #202020;
-  color:#fff;
-}
-.adventures-tabs-content .column-content p:first-child
-{
-  font-size: var(--body-font-size-m);
+  color: var(--darkest-color);
   font-weight: bold;
 }
-.adventures-tabs-content .columns-wrapper img
-{
-  width: 260px !important;
-  max-width: 260px !important;
-  height: 200px !important;
-}
-.adventures-tabs-content .columns-wrapper .columns > div
-{
-  display: block !important;
-  width: 260px !important;
-  max-width: 260px !important;
-  float: left;
-  margin: 12px 12px;
-}
-.adventures-tabs h2:after
- {
-  border-bottom: 2px solid var(--brandPrimary,#ffea00);
-  content: "";
-  display: block;
-  padding-top: 8px;
-  width: 84px;
-}
-.adventures-tabs h2
- {
-  margin-bottom: 30px;
-}
-.adventures-tabs-content .column-content p:last-child
+.adventures-outer article .adventure-description-container p
 {
   color: var(--dim-color);
   font-size: var(--body-font-size-xs);
@@ -119,4 +83,35 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   text-transform: var(--transformUppercase);
+}
+.adventures-outer article .adventure-image-container img
+{
+  width: 260px !important;
+  max-width: 260px !important;
+  height: 200px !important;
+}
+.adventures-categories
+{
+  margin-bottom: 50px;
+  }
+.adventures-categories ul
+{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.adventures-categories .active-category {
+  background: #202020;
+  color: #fff;
+}
+.adventures-categories ul li
+{
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: var(--transformUppercase);
+}
+.adventures-categories ul li:hover
+{
+  background: #202020;
+  color:#fff;
 }
