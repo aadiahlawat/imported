@@ -21,6 +21,7 @@
   --link-hover-color: #1d3ecf;
   --link-bg-color:#ffea00;
   --dim-color:dimgray;
+  --textColorInverse:#ebebeb;
 
   /* fonts */
   --body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -511,7 +512,8 @@ main .section.highlight {
 {
   display: flex;
   max-width: 1200px;
-  gap: 50px;
+  gap: 50px
+  ;
   margin:100px auto 0 auto;
 }
 .faqs-content{

@@ -3,7 +3,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.capstone-guides  .guides div ul
+.capstone-guides  .guides div p:last-child
 {
   background-color: #202020;
     width: 50%;
@@ -12,6 +12,36 @@
     width: 150px;
     padding: 8px 0 0 0;
     justify-content: space-around;
+}
+.capstone-guides  .guides div p:last-child a img
+{
+  display: none;
+}
+.capstone-guides  .guides div p .icon
+{
+  speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: wknd-icon-font!important;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--textColorInverse);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+.capstone-guides  .guides div p .icon.icon-facebook:before
+{
+  content: "";
+}
+.capstone-guides  .guides div p .icon.icon-twitter:before
+{
+  content: "";
+}
+.capstone-guides  .guides div p .icon.icon-instagram:before
+{
+  content: "";
 }
 .capstone-guides  .guides
 {
