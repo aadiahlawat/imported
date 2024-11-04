@@ -73,11 +73,17 @@
 {
   padding: 5px 10px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .adventures-tabs-list .default-content-wrapper p:hover
 {
   background: #202020;
   color:#fff;
+}
+.adventures-tabs-content .column-content p:first-child
+{
+  font-size: var(--body-font-size-m);
+  font-weight: bold;
 }
 .adventures-tabs-content .columns-wrapper img
 {
@@ -92,4 +98,25 @@
   max-width: 260px !important;
   float: left;
   margin: 12px 12px;
+}
+.adventures-tabs h2:after
+ {
+  border-bottom: 2px solid var(--brandPrimary,#ffea00);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+.adventures-tabs h2
+ {
+  margin-bottom: 30px;
+}
+.adventures-tabs-content .column-content p:last-child
+{
+  color: var(--dim-color);
+  font-size: var(--body-font-size-xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
 }

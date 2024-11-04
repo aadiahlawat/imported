@@ -24,3 +24,15 @@
     object-fit: cover;
     width: 164px;
 }
+.capstone-guides h2:after
+{
+  border-bottom: 2px solid var(--brandPrimary,#ffea00);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+.capstone-guides h2
+ {
+  margin-bottom: 30px;
+}
