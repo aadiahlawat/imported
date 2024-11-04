@@ -110,3 +110,15 @@ footer .section:not(.footer-top-bar)
     padding: 40px 14px 24px;
   }
 }
+@media (width<=768px)
+{
+  footer .footer-top-bar .default-content-wrapper
+  {
+    flex-direction: column;
+  }
+  footer .footer-top-bar .default-content-wrapper ul 
+  {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

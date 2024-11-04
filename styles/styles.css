@@ -322,9 +322,9 @@ main .section.highlight {
 .home-adventures-carousel .carousel-slide-content a,  
 .home-featured-article a,
 .home-featured-article .column-content a,
-.home-recent-articles .button-container a,
+.home-recent-articles .default-content-wrapper .button-container a,
 .home-recent-trips .button-container a,
-.button-container a
+.default-content-wrapper .button-container a
 {
   background-color: var(--brandPrimary) !important;
   border-radius: var(--buttonBorderRadius) !important;
@@ -368,6 +368,10 @@ main .section.highlight {
 .home-carousel .carousel-slide-content h2
 {
   margin-top: 0px;
+}
+.home-carousel .carousel-slide-content
+{
+  margin: 0 auto !important;
 }
 .home-carousel .carousel-slide-indicators
 {
@@ -428,6 +432,16 @@ main .section.highlight {
 {
   margin: 0 !important;
 }
+.home-recent-articles .cards-card-body .button-container a,
+.home-recent-trips .cards-card-body .button-container a
+{
+  background: transparent !important;
+  color: var(--darkest-color);
+  font-weight: var(--fontWeightBold);
+  margin: 0 !important;
+  font-size: var(--body-font-size-m) !important;
+  padding: 0 !important;
+}
 .home-adventures-carousel .carousel-wrapper
 {
   max-width: 100% !important;
@@ -444,7 +458,7 @@ main .section.highlight {
 }
 .home-adventures-carousel .carousel-slide-content
   {
-  margin: 92px 92px 0px 92px !important;
+  margin: 92px auto 0px auto !important;
   background-color: #fff !important;
   float: left !important;
   color: #000 !important;

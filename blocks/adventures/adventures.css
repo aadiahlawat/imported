@@ -17,7 +17,7 @@
 }
 .adventures-banner .carousel-slide-content
   {
-  margin: 92px 92px 0px 92px !important;
+  margin: 92px auto 0px auto !important;
   background-color: #fff !important;
   float: left !important;
   color: #000 !important;

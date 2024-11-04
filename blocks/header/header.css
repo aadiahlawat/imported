@@ -279,3 +279,12 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+
+@media (width<=768px)
+{
+  header nav .search-container
+  {
+    max-width: 140px;
+  }
+}
