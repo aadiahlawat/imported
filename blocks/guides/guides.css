@@ -1,8 +1,13 @@
-.capstone-guides  .guides div p:last-child
+.capstone-guides .guides-wrapper
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.capstone-guides  .guides div ul
 {
   background-color: #202020;
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     display: flex;
     width: 150px;
     padding: 8px 0 0 0;
@@ -26,7 +31,7 @@
 }
 .capstone-guides h2:after
 {
-  border-bottom: 2px solid var(--brandPrimary,#ffea00);
+  border-bottom: 2px solid var(--brandPrimary);
   content: "";
   display: block;
   padding-top: 8px;
@@ -35,4 +40,17 @@
 .capstone-guides h2
  {
   margin-bottom: 30px;
+}
+.capstone-guides .default-content-wrapper p
+{
+  font-size: var(--body-font-size-xs);
+  color: var(--dim-color);
+}
+.capstone-guides div h4
+{
+  font-size: var(--body-font-size-xs);
+  color: var(--darkest-color);
+  font-family: var(--body-font-family);
+  font-weight: var(--fontWeightBold);
+  text-transform: var(--transformUppercase);
 }

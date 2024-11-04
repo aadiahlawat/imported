@@ -42,6 +42,9 @@
   --brandPrimary:#ffea00;
   --buttonBorderRadius:0;
 
+  --transformUppercase:uppercase;
+  --transformCapitalize:capitalize;
+
   /* font weight  */
   --fontWeightBold:600;
   /* nav height */
@@ -308,7 +311,7 @@ main .section.highlight {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-transform: uppercase;
+  text-transform: var(--transformUppercase);
   font-size: var(--body-font-size-xs);
   color: var(--dim-color);
 }
@@ -328,7 +331,7 @@ main .section.highlight {
   font-size: var(--body-font-size-xs) !important;
   font-weight: var(--fontWeightBold) !important;
   padding: 1em 2.5em !important;
-  text-transform: uppercase !important;
+  text-transform: var(--transformUppercase) !important;
 }
 
 /**  homepage ***/
@@ -508,14 +511,20 @@ main .section.highlight {
 {
   display: flex;
   max-width: 1200px;
+  gap: 50px;
   margin:100px auto 0 auto;
 }
 .faqs-content{
   flex:2;
 }
 .faqs-content h3{
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   font-weight: var(--fontWeightBold);
+  text-transform: var(--transformUppercase);
+}
+.faqs-content .accordion-item-body p{
+  font-size: var(--body-font-size-xs);
+  color: var(--dim-color);
 }
 .faqs-content .accordion details
 {
@@ -523,6 +532,8 @@ main .section.highlight {
   border-right: none !important;
   border-left: none !important;
 }
-
-
+.faq-right-sidebar p
+{
+  font-size: var(--body-font-size-xs);
+}
 

@@ -37,7 +37,7 @@
   font-size: var(--body-font-size-xs) !important;
   font-weight: var(--fontWeightBold) !important;
   padding: 1em 2.5em !important;
-  text-transform: uppercase !important;
+  text-transform: var(--transformUppercase) !important;
 }
 .magazine-featured-article img{
     height: 100%;

@@ -61,7 +61,7 @@ header nav a:any-link {
   color: var(--text-color);
   padding:15px 17px;
 }
-header nav a:hover {
+header nav .nav-sections a:hover {
   text-decoration: none;
   background-color: var(--link-bg-color);
 }
@@ -158,7 +158,7 @@ header .nav-brand {
 
 header nav .nav-brand img {
   width: 128px;
-  height: auto;
+  height: 48px;
 }
 
 /* sections */

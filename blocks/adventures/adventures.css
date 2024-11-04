@@ -73,7 +73,7 @@
 {
   padding: 5px 10px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: var(--transformUppercase);
 }
 .adventures-tabs-list .default-content-wrapper p:hover
 {
@@ -118,5 +118,5 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-transform: uppercase;
+  text-transform: var(--transformUppercase);
 }
