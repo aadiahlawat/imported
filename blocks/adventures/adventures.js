@@ -144,6 +144,7 @@ function renderData(block,data)
       adventureWrapper.appendChild(adventureContent);
 
   });
+  adventureWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.querySelector('div').style.display = 'none'; ;
 
   block.append(adventureWrapper);
@@ -179,7 +180,6 @@ export default async function decorate(block) {
       const path = link ? link.getAttribute('href') : block.textContent.trim();
       const adventures=await fetchadventures(block,path,adventuresPerPage,currentPage);
       const totaladventures=block.querySelector('.adventures-outer').getAttribute('data-totaladventures');
-      block.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
       //renderPagination(block,path,adventuresPerPage,totaladventures,currentPage);
       loadCategoriesTab();
 }

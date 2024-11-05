@@ -56,12 +56,9 @@ function renderData(block,data)
         articleWrapper.appendChild(articleContent);
 
     });
-    block.querySelector('div').style.display = 'none'; ;
-    const clearArticles=block.querySelector('ul');
-    if(clearArticles)
-    {
-        block.querySelector('ul').remove();
-    }
+    block.querySelector('div').style.display = 'none'; 
+    articleWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+
     block.append(articleWrapper);
 }
 /*
@@ -95,6 +92,6 @@ export default async function decorate(block) {
         const path = link ? link.getAttribute('href') : block.textContent.trim();
         const articles=await fetchArticles(block,path,articlesPerPage,currentPage);
         const totalArticles=block.querySelector('.articles-outer').getAttribute('data-totalArticles');
-        block.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+       
         //renderPagination(block,path,articlesPerPage,totalArticles,currentPage);
 }
