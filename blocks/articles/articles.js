@@ -31,6 +31,7 @@ function renderData(block,data)
         const articleImage = document.createElement('img'); // Create an img element
         articleImage.src = article.Image; // Set the image source (replace with your image URL)
         articleImage.alt = article.Title;
+        articleImage.setAttribute('loading','lazy');
 
         articleImageContainer.appendChild(articleImage);
         articleContent.appendChild(articleImageContainer);

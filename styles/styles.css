@@ -24,8 +24,8 @@
   --textColorInverse:#ebebeb;
 
   /* fonts */
-  --body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --heading-font-family: "Asar",Georgia,"Times New Roman",Times,serif;
+  --body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif,roboto-fallback;
+  --heading-font-family: "Asar",Georgia,"Times New Roman",Times,serif,roboto-condensed-fallback;
 
   /* body sizes */
   --body-font-size-m: 22px;
