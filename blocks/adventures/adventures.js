@@ -144,7 +144,7 @@ function renderData(block,data)
       adventureWrapper.appendChild(adventureContent);
 
   });
-  adventureWrapper.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  adventureWrapper.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.querySelector('div').style.display = 'none'; ;
 
   block.append(adventureWrapper);
