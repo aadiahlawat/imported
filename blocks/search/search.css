@@ -92,8 +92,7 @@ border: none
 
 /* no results */
 .search ul.search-results.no-results {
-  display: block;
-  margin-left: 34px;
+  display: none;
 }
 
 .search ul.search-results.no-results > li {

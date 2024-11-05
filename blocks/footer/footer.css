@@ -127,6 +127,7 @@ footer .footer-top-bar .button-container a
   footer .footer-top-bar .default-content-wrapper ul 
   {
     width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

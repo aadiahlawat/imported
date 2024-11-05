@@ -1,6 +1,7 @@
 .socialshare-container .socialshare div
 {
     display: flex;
+    min-width: 320px;
 }
 .socialshare-container .socialshare div img
 {
