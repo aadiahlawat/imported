@@ -25,14 +25,14 @@ left: 5px;
   transition: border-color 0.2s;
 }
 .search .search-box input:focus {
-    background-color: var(--bodyBackground,#fff);
-    border: 1px solid var(--textColor,#202020);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline: none!important;
+  background-color: var(--bodyBackground,#fff);
+  /* border: 1px solid var(--textColor,#202020); */
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 0 1px #000;
+  outline: none!important;
 }
-.search .search-box input:hover {
-/*  border: 1px solid var(--text-color); */
+.search .search-box input {
+border: none
 }
 
 /* search results */

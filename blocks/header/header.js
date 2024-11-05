@@ -103,6 +103,27 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+/*****        make current page nav item selected *****/
+function activeNavItem()
+{
+  let currentPage = window.location.pathname.replace("/","");
+  const navWrapper=document.querySelector('nav .nav-sections ul');
+  const navItems=navWrapper.querySelectorAll('li');
+  navItems.forEach((item)=>
+  {
+      const itemTitle=item.querySelector('a').getAttribute('title').toLowerCase().replace(/\s+/g, '-');
+      if(itemTitle===currentPage)
+      {
+        item.closest('li').classList.add('active-page');
+      }
+  });
+}
+
+/************************************* */
+function renderTopBar()
+{
+
+}
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -146,10 +167,6 @@ export default async function decorate(block) {
     });
   }
 
-
-
-
-
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
@@ -173,11 +190,16 @@ export default async function decorate(block) {
   const header = document.querySelector('.nav-wrapper');
   window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        header.style.padding = '10px 0px'; // Reduced padding
+        header.style.padding = '35px 0 10px 0px'; // Reduced padding
         header.style.boxShadow = '0 8px 20px 0 rgba(0,0,0,.26)'; // Reduced padding
       } else {
           header.style.padding = '50px 0px'; // Original padding
           header.style.boxShadow = 'none'; // Original padding
       }
   });
+
+  renderTopBar();
+  
+  activeNavItem();
+
 }

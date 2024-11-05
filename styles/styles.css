@@ -325,8 +325,7 @@ main .section.highlight {
 .home-featured-article a,
 .home-featured-article .column-content a,
 .home-recent-articles .default-content-wrapper .button-container a,
-.home-recent-trips .button-container a,
-.default-content-wrapper .button-container a
+.home-recent-trips .button-container a
 {
   background-color: var(--brandPrimary) !important;
   border-radius: var(--buttonBorderRadius) !important;

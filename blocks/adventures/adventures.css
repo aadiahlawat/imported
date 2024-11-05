@@ -73,7 +73,7 @@
 .adventures-outer article .adventure-title-container a
 {
   color: var(--darkest-color);
-  font-weight: bold;
+  font-weight: var(--fontWeightBold);
 }
 .adventures-outer article .adventure-description-container p
 {
