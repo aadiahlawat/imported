@@ -1,4 +1,4 @@
-
+import { createOptimizedPicture } from '../../scripts/aem.js';
 function loadCategoriesTab()
 {
 /************  Categories code ****************/
@@ -120,9 +120,6 @@ function renderData(block,data)
       const adventureImage = document.createElement('img'); // Create an img element
       adventureImage.src = adventure.Image; // Set the image source (replace with your image URL)
       adventureImage.alt = adventure.Title;
-      adventureImage.width = 260;
-      adventureImage.height = 200;
-      adventureImage.setAttribute('loading','lazy');
 
       adventureImageContainer.appendChild(adventureImage);
       adventureContent.appendChild(adventureImageContainer);
@@ -182,6 +179,7 @@ export default async function decorate(block) {
       const path = link ? link.getAttribute('href') : block.textContent.trim();
       const adventures=await fetchadventures(block,path,adventuresPerPage,currentPage);
       const totaladventures=block.querySelector('.adventures-outer').getAttribute('data-totaladventures');
+      block.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
       //renderPagination(block,path,adventuresPerPage,totaladventures,currentPage);
       loadCategoriesTab();
 }

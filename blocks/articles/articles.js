@@ -1,3 +1,4 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
 async function fetchArticles(block,path,articlesPerPage,currentPage) {
     try {
     const offset=(currentPage-1)*articlesPerPage;
@@ -31,7 +32,6 @@ function renderData(block,data)
         const articleImage = document.createElement('img'); // Create an img element
         articleImage.src = article.Image; // Set the image source (replace with your image URL)
         articleImage.alt = article.Title;
-        articleImage.setAttribute('loading','lazy');
 
         articleImageContainer.appendChild(articleImage);
         articleContent.appendChild(articleImageContainer);
@@ -95,5 +95,6 @@ export default async function decorate(block) {
         const path = link ? link.getAttribute('href') : block.textContent.trim();
         const articles=await fetchArticles(block,path,articlesPerPage,currentPage);
         const totalArticles=block.querySelector('.articles-outer').getAttribute('data-totalArticles');
+        block.querySelectorAll('img').forEach((img) => img.replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
         //renderPagination(block,path,articlesPerPage,totalArticles,currentPage);
 }
