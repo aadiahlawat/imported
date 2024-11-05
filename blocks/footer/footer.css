@@ -92,6 +92,10 @@ footer .footer-top-bar .default-content-wrapper p:last-child .icon.icon-instagra
 {
   content: "";
 }
+footer .footer-top-bar .active-page a
+{
+  text-decoration: underline !important;
+}
 footer .footer-top-bar .default-content-wrapper p:last-child 
 {
   display: flex;
@@ -104,6 +108,10 @@ footer .footer-top-bar .default-content-wrapper p:last-child strong
 footer .section:not(.footer-top-bar)
 {
   margin-bottom: 15px;
+}
+footer .footer-top-bar .button-container a
+{
+  background: transparent;
 }
 @media (width >= 900px) {
   footer .footer > div {

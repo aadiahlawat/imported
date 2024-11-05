@@ -9,9 +9,9 @@ header .nav-wrapper {
 }
 .header .nav-wrapper
 {
--webkit-transition: padding-bottom .5s ease,padding-top .5s;
--webkit-transition: padding-bottom .5s ease-out,padding-top .5s ease ease-out .25s;
-transition: padding-bottom .5s ease-out,padding-top .5s ease ease-out .25s;
+-webkit-transition: padding-bottom .1s ease,padding-top .5s;
+-webkit-transition: padding-bottom .1s ease-out,padding-top .5s ease ease-out .25s;
+transition: padding-bottom .1s ease-out,padding-top .5s ease ease-out .25s;
 }
 header nav {
   box-sizing: border-box;

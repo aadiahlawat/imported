@@ -193,7 +193,7 @@ export default async function decorate(block) {
         header.style.padding = '35px 0 10px 0px'; // Reduced padding
         header.style.boxShadow = '0 8px 20px 0 rgba(0,0,0,.26)'; // Reduced padding
       } else {
-          header.style.padding = '50px 0px'; // Original padding
+          header.style.padding = '75px 0px 50px 0px'; // Original padding
           header.style.boxShadow = 'none'; // Original padding
       }
   });
