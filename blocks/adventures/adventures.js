@@ -120,6 +120,8 @@ function renderData(block,data)
       const adventureImage = document.createElement('img'); // Create an img element
       adventureImage.src = adventure.Image; // Set the image source (replace with your image URL)
       adventureImage.alt = adventure.Title;
+      adventureImage.width = 260;
+      adventureImage.height = 200;
       adventureImage.setAttribute('loading','lazy');
 
       adventureImageContainer.appendChild(adventureImage);
